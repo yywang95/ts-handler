@@ -1,0 +1,30 @@
+{
+  "name": "botnets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "fix": "esw src --fix --ext .ts",
+    "lint": "esw src --clear --ext .ts",
+    "lint-w": "esw src --clear -w --ext .ts",
+    "build-w": "tsc -w --inlineSourceMap",
+    "start": "run-p lint-w build-w",
+    "prebuild": "esw src --ext .ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-watch": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
